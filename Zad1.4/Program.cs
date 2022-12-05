@@ -6,7 +6,7 @@ void FillArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write($"Введите число {i + 1} "); int.TryParse(Console.ReadLine()!, out arr[i]);
+        Console.Write($"Введите число {i + 1}: "); int.TryParse(Console.ReadLine()!, out arr[i]);
     }
 }
 
