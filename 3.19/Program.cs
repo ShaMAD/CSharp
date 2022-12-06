@@ -4,13 +4,20 @@
 12821 -> да
 23432 -> да
  */
-Console.Write("Введите число: "); string n = Console.ReadLine()!;
 
-if (check_polindrom(n))
-    Console.WriteLine($"{n} полиндром");
+bool bParse = false;
+int num = 0;
+
+do
+{
+    Console.Write("Введите число: ");
+    bParse = int.TryParse(Console.ReadLine()!, out num);
+} while (bParse == false);
+
+if (check_polindrom(num.ToString()))
+    Console.WriteLine($"Число {num} полиндром");
 else
-    Console.WriteLine($"{n} не полиндром");
-
+    Console.WriteLine($"Число {num} не полиндром");
 
 bool check_polindrom(string num)
 {
