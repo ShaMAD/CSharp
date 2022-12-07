@@ -24,9 +24,9 @@ int[] GetCoors(string name)
 
 double GetWay(int[] a, int[] b)
 {
-    return Math.Round(Math.Sqrt(Math.Pow(coorsB[0] - coorsA[0], 2) +
-        Math.Pow(coorsB[1] - coorsA[1], 2) +
-        Math.Pow(coorsB[2] - coorsA[2], 2)), 2);
+    return Math.Round(Math.Sqrt(Math.Pow(b[0] - a[0], 2) +
+        Math.Pow(b[1] - a[1], 2) +
+        Math.Pow(b[2] - a[2], 2)), 2);
 }
 
 coorsA = GetCoors("A");
