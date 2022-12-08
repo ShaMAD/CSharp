@@ -12,6 +12,7 @@ do
     bParse = int.TryParse(Console.ReadLine()!, out num);
 } while (bParse == false);
 
+// Математический способ
 Console.Write($"Сумма цифр для числа int {num}: ");
 int numMath = num;
 
@@ -22,6 +23,7 @@ while (numMath > 0)
 }
 Console.WriteLine(sum);
 
+// Текстовый способ
 sum = 0;
 string numstr = num.ToString();
 Console.Write($"Сумма цифр для числа srting {num}: ");
